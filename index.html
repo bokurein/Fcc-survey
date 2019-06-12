@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="all">
+                                        <!-- HEADER -->
+    <header>
+        <h1 id="title">League survey</h1>
+        <p id="description">I would know average level of casual player in league of legend !</p>
+    </header>
+                                        <!--Survey Elements-->
+    <form action="submit" id="survey-form">
+            <div class="part">
+                <div class="label-type">
+                        <label id="name-label" for="name">Name:</label>
+                </div>
+                <div class="input">
+                        <input type="name" name="name" id="name" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="part">
+                <div class="label-type">
+                        <label id="email-label" for="email">E-mail:</label>
+                </div>
+                <div class="input">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="part">
+                <div class="label-type">
+                        <label id="number-label" for="age">Age:</label>
+                </div>
+                <div class="input">
+                        <input type="number" id="number" name="age" min="1" max="100" placeholder="Age" required>
+                </div>
+            </div>
+            <div class="part">
+                <div class="label-type">
+                    <label for="your-role" id="your-role-label">Your Role :</label>
+                </div>
+                <div class="input">
+                <select name="your-role" id="dropdown">
+                    <option value="Choose"disabled selected hidden>Choose Your Role</option>
+                    <option value="Top">Top</option>
+                    <option value="Jungle">Jungle</option>
+                    <option value="Mid">Mid</option>
+                    <option value="Adc">Adc</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+            </div>
+            <div class="part">
+                <div class="label-type">
+                <label for="Elo">What is your actual <br>Ranking :</label>
+                </div>
+                <ul>
+                    <li class="your-elo">
+                        <div class="input">
+                            <input type="radio" id="Iron" name="Elo" value="Iron">
+                        </div>
+                        <div class="label-type">
+                                <label class="right" for="Iron">Iron</label>
+                        </div>
+                    </li>
+                    
+                    <li class="your-elo">
+                            <div class="input">
+                                <input type="radio" id="Bronze" name="Elo" value="Bronze">
+                            </div>
+                            <div class="label-type">
+                                <label class="right" for="Bronze">Bronze</label>
+                            </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Silver" name="Elo" value="Silver">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Silver">Silver</label>
+                                </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Gold" name="Elo" value="Gold">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Gold">Gold</label>
+                                </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Platinium" name="Elo" value="Platinium">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Platinium">Platinium</label>
+                                </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Diamond" name="Elo" value="Diamond">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Diamond">Diamond</label>
+                                </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Master" name="Elo" value="Master">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Master">Master</label>
+                                </div>
+                    </li>
+                    <li class="your-elo">
+                            <div class="input">
+                                    <input type="radio" id="Challenger" name="Elo" value="Challenger">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Challenger">Challenger</label>
+                                </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="part">
+                    <div class="label-type">
+                    <label for="champions">What's your favorites <br>champions :</label>
+                    </div>
+                    <ul>
+                        <li class="your-champions">
+                            <div class="input">
+                                <input type="checkbox" id="Ahri" name="champions" value="Ahri">
+                            </div>
+                            <div class="label-type">
+                                    <label class="right" for="Ahri">Ahri</label>
+                            </div>
+                        </li>
+                        
+                        <li class="your-champions">
+                                <div class="input">
+                                    <input type="checkbox" id="Xayah" name="champions" value="Xayah">
+                                </div>
+                                <div class="label-type">
+                                    <label class="right" for="Xayah">Xayah</label>
+                                </div>
+                        </li>
+                        <li class="your-champions">
+                                <div class="input">
+                                        <input type="checkbox" id="Katarina" name="champions" value="Katarina">
+                                    </div>
+                                    <div class="label-type">
+                                        <label class="right" for="Katarina">Katarina</label>
+                                    </div>
+                        </li>
+                        <li class="your-champions">
+                                <div class="input">
+                                        <input type="checkbox" id="Aatrox" name="champions" value="Aatrox">
+                                    </div>
+                                    <div class="label-type">
+                                        <label class="right" for="Aatrox">Aatrox</label>
+                                    </div>
+                        </li>
+                    </ul>
+            </div>
+            <div class="part">
+                    <div class="label-type">
+                            <label id="comment-label" for="comment">You can also  make a suggestion :</label>
+                    </div>
+                    <div class="input">
+                            <textarea id="comment" name="comment" placeholder="type here ..."></textarea>
+                    </div>
+                </div>
+            <input id="submit" type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/0/72/sXJE0S.jpg");
+    margin: 0;
+}
+#all{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 56vmax;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding-bottom: 15vh;
+}
+                        /*HEADER*/
+header{
+    padding-top: 3em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;;
+    margin-bottom: 5em;
+    font-family: 'Courgette', cursive;
+}
+                        /* SURVEY ELEMENTS */
+#survey-form{
+    padding-left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.part{
+    display: grid;
+    align-items: start;
+    grid-template-columns: 0.6fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 1fr;
+    grid-template-areas: 
+    "a b";
+}
+.input{
+    grid-area: b;
+}
+.label-type{
+    grid-area: a;
+    font-size: 120%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+ul{
+    padding: 0;
+}
+ul .your-elo{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 2em 5em;
+    grid-template-areas: "e f"
+}
+ul .your-elo .input{
+    grid-area: e !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+}
+ul .your-elo .label-type{
+    grid-area: f !important;
+    margin-right: auto;
+
+}
+ul .your-champions{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 2em 5em;
+    grid-template-areas:"g h";
+}
+ul .your-champions .input{
+    grid-area: g !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+}
+ul .your-champions .label-type{
+    grid-area: h !important;
+}
+#comment{
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 5px 0px #656565;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: auto;
+    width: 25vw;
+    height: 10vh;
+    margin-bottom: 5em;
+}
+#name{
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px #656565;
+    border-radius: 0.5em;
+}
+#email{
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px #656565;
+    border-radius: 0.5em;
+}
+#number{
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px #656565;
+    border-radius: 0.5em;
+}
+#dropdown{
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px #656565;
+    border-radius: 0.5em;
+}
+#submit{
+    margin-left: 30%;
+    margin-right: auto;
+    width: 10em;
+    height:3em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 5px 0px #656565;
+}
